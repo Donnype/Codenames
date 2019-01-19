@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- Ensure that everything scales appropriately on a mobile device -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.1, user-scalable=yes, minimum-scale=0.3, maximum-scale=1.0">
+
+</head>
+
+<body>
+
+<div class="menu-container" align="center">
+    <div class="button-container">
+       <a id="11" onclick="myFunction(this)" class="button"></a>
+       <a id="12" onclick="myFunction(this)" class="button"></a>
+       <a id="13" onclick="myFunction(this)" class="button"></a>
+       <a id="14" onclick="myFunction(this)" class="button"></a>
+       <a id="15" onclick="myFunction(this)" class="button"></a>
+       <a id="21" onclick="myFunction(this)" class="button"></a>
+       <a id="22" onclick="myFunction(this)" class="button"></a>
+       <a id="23" onclick="myFunction(this)" class="button"></a>
+       <a id="24" onclick="myFunction(this)" class="button"></a>
+       <a id="25" onclick="myFunction(this)" class="button"></a>
+       <a id="31" onclick="myFunction(this)" class="button"></a>
+       <a id="32" onclick="myFunction(this)" class="button"></a>
+       <a id="33" onclick="myFunction(this)" class="button"></a>
+       <a id="34" onclick="myFunction(this)" class="button"></a>
+       <a id="35" onclick="myFunction(this)" class="button"></a>
+       <a id="41" onclick="myFunction(this)" class="button"></a>
+       <a id="42" onclick="myFunction(this)" class="button"></a>
+       <a id="43" onclick="myFunction(this)" class="button"></a>
+       <a id="44" onclick="myFunction(this)" class="button"></a>
+       <a id="45" onclick="myFunction(this)" class="button"></a>
+       <a id="51" onclick="myFunction(this)" class="button"></a>
+       <a id="52" onclick="myFunction(this)" class="button"></a>
+       <a id="53" onclick="myFunction(this)" class="button"></a>
+       <a id="54" onclick="myFunction(this)" class="button"></a>
+       <a id="55" onclick="myFunction(this)" class="button"></a>
+    </div>
+</div> 
+
+
+
+<div class="spymaster-container">
+	<div  align="center" >
+	<button onclick="spymaster()" class="spymaster">Spymaster</button>
+	</div>
+</div>
+<div class="nieuwspel-container">
+	<div align="center">
+	<button onclick="Client.nieuwspel()" class="nieuwspel">Nieuw spel</button>
+	</div>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="spel_cn.js"></script>
+<script src="client_cn.js"></script> 
+
+
+<style type="text/css">
+
+
+.button-container {
+    width: 900px;
+    background: white;
+    overflow-y: auto;
+}
+
+.button-container > a {
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+}
+
+.spymaster {
+    width: 130px;
+    height: 50px;
+    background-color: darkblue;
+    color: white;
+    margin: 15px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.nieuwspel {
+    width: 130px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    margin: 15px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.button {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background: lightgrey;
+    margin: 15px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    font-family : "Comic Sans MS";
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+</style>
+
+
+</body>
+</html>
